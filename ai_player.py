@@ -17,8 +17,8 @@ def winning(board, player):
 
 
 def minimax(new_board, player):
-    huPlayer = '0'
-    aiPlayer = 'X'
+    huPlayer = 'X'
+    aiPlayer = '0'
     availSpots = emptyIndices(new_board)
     if winning(new_board, huPlayer):
         return {"score": -10}
